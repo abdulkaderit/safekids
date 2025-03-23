@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
-class DashboardScreen extends StatefulWidget {
+class DashbordScreen extends StatefulWidget {
+
   @override
-  _DashboardScreenState createState() => _DashboardScreenState();
+  State<DashbordScreen> createState() => _DashbordScreenState();
 }
 
-class _DashboardScreenState extends State<DashboardScreen> {
+class _DashbordScreenState extends State<DashbordScreen> {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Parent Dashboard"),
+        title: Text("DashbordScreen"),
         backgroundColor: Colors.blue,
       ),
       body: Padding(
@@ -71,4 +71,5 @@ class _DashboardScreenState extends State<DashboardScreen> {
       SnackBar(content: Text("Apps blocked for this child")),
     );
   }
+
 }

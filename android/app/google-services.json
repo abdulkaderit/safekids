@@ -1,44 +1,26 @@
 {
   "project_info": {
-    "project_number": "419147436939",
-    "project_id": "safekids-97046",
-    "storage_bucket": "safekids-97046.firebasestorage.app"
+    "project_number": "967690451118",
+    "project_id": "safekids-49aa0",
+    "storage_bucket": "safekids-49aa0.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:419147436939:android:2e304ca9ce1ad9cdb5d58e",
+        "mobilesdk_app_id": "1:967690451118:android:477c2111b91ce62839953f",
         "android_client_info": {
           "package_name": "com.abdul.safekids"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "419147436939-p2rfcdlheb6vufjgjj30dgstefv23rv0.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.abdul.safekids",
-            "certificate_hash": "0ec23e93975f6fd7267d83250146aa2d0f4093f8"
-          }
-        },
-        {
-          "client_id": "419147436939-il0d5o2stjrdk33ht58mhrp8s6l84abd.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCFxMYpCK_AQ3RDLn94bt1oFDmCdeGXO8o"
+          "current_key": "AIzaSyAnxMLdjmckwyHU-YX0Uz0KH7HIeW-XpFw"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "419147436939-il0d5o2stjrdk33ht58mhrp8s6l84abd.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }

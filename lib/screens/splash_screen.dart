@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'auth_screen.dart';
+import 'package:safekids/screens/role_selection_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -25,8 +24,9 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
     _controller.forward();
     _controller.addStatusListener((status) {
       if (status == AnimationStatus.completed) {
-        Navigator.of(context).pushReplacement(
-          MaterialPageRoute(builder: (context) => AuthScreen()),
+        Navigator.pushAndRemoveUntil(context,
+          MaterialPageRoute(builder: (context) => RoleSelectionScreen(),
+          ),(protected)=> false,
         );
       }
     });
@@ -42,13 +42,6 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        decoration: BoxDecoration(
-            //color: Colors.blue,
-          image: DecorationImage(
-              image: AssetImage('assets/images/background.svg'),
-            fit: BoxFit.cover,
-          )
-        ),
         child: Center(
           child: ScaleTransition(
             scale: _animation,
